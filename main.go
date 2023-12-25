@@ -16,6 +16,10 @@ func main(){
     fmt.Printf("Non-Generic Sums: %v and %v\n",
 	SumIntorFloats[string, int64](ints),
 	SumIntorFloats[string , float64](floats))	
+
+	fmt.Printf("Generic Sums, type parameters inferred: %v and %v\n",
+    SumIntorFloats(ints),
+    SumIntorFloats(floats))
 }
 
 // func SumInts(m map[string]int64) int64{
